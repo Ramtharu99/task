@@ -23,7 +23,7 @@ export default function AdminLogin() {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    if (values.email === 'admin@99.com' && values.password === 'admin123') {
+    if (values.email === 'admin@demo.com' && values.password === 'admin123') {
       setAuth(true);
       localStorage.setItem('adminAuth', 'true');
       router.push('/admin/dashboard');
@@ -66,7 +66,7 @@ export default function AdminLogin() {
         </form>
       </Form>
       <section className='mt-4 text-sm text-gray-600'>
-        <p>Email:admin@99.com </p>
+        <p>Email:admin@demo.com </p>
         <p>Password: admin123</p>
       </section>
     </div>
