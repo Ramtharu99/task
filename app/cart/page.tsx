@@ -34,7 +34,7 @@ export default function Cart() {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       const order = {
-        userId: 1, // Dummy user ID
+        userId: 1,
         products: cart.map((item) => ({
           productId: item.id,
           quantity: item.quantity || 1,
